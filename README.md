@@ -1,6 +1,6 @@
 # sodium-universal
 
-Universal wrapper for `sodium-javascript` and `sodium-native` working in Node.js and the Browser
+Universal wrapper for `sodium-js` and `sodium-native` working in Node.js and the Browser
 
 ```sh
 npm install sodium-universal
@@ -30,10 +30,10 @@ c7dbd46a6cc84ff2e0d1285c
 
 And the browser:
 
-First install the peer dep, `sodium-javascript`.
+First install the peer dep, `sodium-js`.
 
 ```sh
-npm install --save sodium-javascript
+npm install --save sodium-js
 ```
 
 And then browserify
@@ -46,11 +46,11 @@ browserify example.js > bundle.js
 
 [`libsodium`](https://download.libsodium.org/doc/) is a collection of cryptographic primitives, providing a low-level foundation to build higher-level cryptographic applications and protocols. It is often put in contrast to RSA based cryptography and OpenSSL, even though they all share overlapping algorithms and target slightly different audiences. Sodium is a collection of modern collection of primitives, fulfilling the same cryptographic tasks, but based on simpler and more efficient algorithms.
 
-This library provides seamless bindings to [`sodium-native`](https://github.com/sodium-friends/sodium-native), which is the original C implementation of `libsodium` exposed as a Node native module. For the browser we expose [`sodium-javascript`](https://github.com/sodium-friends/sodium-javascript), using the `package.json` [`browser`](https://github.com/defunctzombie/package-browser-field-spec) field, which is supported by most bundlers.
+This library provides seamless bindings to [`sodium-native`](https://github.com/sodium-friends/sodium-native), which is the original C implementation of `libsodium` exposed as a Node native module. For the browser we expose [`sodium-js`](https://github.com/serapath/sodium-js), using the `package.json` [`browser`](https://github.com/defunctzombie/package-browser-field-spec) field, which is supported by most bundlers.
 
 ## API
 
-Please refer to [`sodium-native`](https://github.com/sodium-friends/sodium-native#api) and [`sodium-javascript`](https://github.com/sodium-friends/sodium-javascript#api). Note that the two modules do not yet have feature parity, where `sodium-native` is the more featureful of the two.
+Please refer to [`sodium-native`](https://github.com/sodium-friends/sodium-native#api) and [`sodium-js`](https://github.com/serapath/sodium-js#api). Note that the two modules do not yet have feature parity, where `sodium-native` is the more featureful of the two.
 
 ## Compatibilty
 
