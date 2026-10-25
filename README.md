@@ -1,9 +1,9 @@
-# sodium-universal
+# sodium-crypto
 
 Universal wrapper for `sodium-js` and `sodium-native` working in Node.js and the Browser
 
 ```sh
-npm install sodium-universal
+npm install sodium-crypto
 ```
 
 `sodium-native` ships with prebuilds for macOS, Windows, and Linux.
@@ -13,7 +13,7 @@ Note that the module itself is generated on a prepublish hook.
 ## Usage
 
 ```js
-var sodium = require('sodium-universal')
+var sodium = require('sodium-crypto')
 
 var rnd = Buffer.allocUnsafe(12) // Cryptographically random data
 sodium.randombytes_buf(rnd)
